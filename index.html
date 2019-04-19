@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Keep your meals saucy and exciting with Saucy Meal Calendar.">
+    <title>Saucy Calendar</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <header role="banner">
+      <h1>Saucy Calendar</h1>
+      <button type="button" class="backButton js-backButton hidden">Back to Home</button>
+    </header>
+    <section role="region" class="getStartedScreen">
+      <div class="getStartedBlock">
+        <h3 class="getStartedBanner">Get Started</h3>
+        <div class="getStarted">
+          <form action="" method="get" class="getStartedForm">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+            <label for="userEmail">Email:</label>
+            <input type="email" name="userEmail" id="userEmail" required>
+            <button type="submit" class="userSubmitButton">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section role="region" class="homeScreen js-homeScreen hidden">
+      <button type="button" class="viewMealCalendarButton js-viewMealCalendarButton">See My Meal Calendar</button>
+      <button type="button" class="changeMealCalendarButton js-changeMealCalendarButton">Change My Meal Calendar</button>
+      <button type="button" class="newMealCalendar js-newMealCalendar">Start New Meal Calendar</button>
+    </section>
+    <section role="region" class="foodPrefScreen js-foodPrefScreen hidden">
+      <h2>Food Preferences</h2>
+      <form action="" method="get" class="foodPrefForm">
+        <div class="foodChoices">
+        <div class="categories">
+          <h3>Categories</h3>
+          <div class="categoriesChecklist">
+            <div class="checklistCol1">
+              <input type="checkbox" id="beef" name="beef">
+              <label for="beef">Beef</label>
+              <input type="checkbox" id="chicken" name="chicken">
+              <label for="chicken">Chicken</label>
+              <input type="checkbox" id="lamb" name="lamb">
+              <label for="lamb">Lamb</label>
+              <input type="checkbox" id="pasta" name="pasta">
+              <label for="pasta">Pasta</label>
+            </div>
+            <div class="checkListCol2">
+              <input type="checkbox" id="pork" name="pork">
+              <label for="pork">Pork</label>
+              <input type="checkbox" id="seafood" name="seafood">
+              <label for="seafood">Seafood</label>
+              <input type="checkbox" id="vegan" name="vegan">
+              <label for="vegan">Vegan</label>
+              <input type="checkbox" id="vegetarian" name="vegetarian">
+              <label for="vegetarian">Vegetarian</label>
+            </div>
+          </div>
+        </div>
+        <div class="area">
+          <h3>Cuisine</h3>
+          <div class="cuisineChecklist">
+            <div class="checklistCol1"> 
+                <input type="checkbox" id="american" name="american">
+                <label for="american">American</label>
+                <input type="checkbox" id="british" name="british">
+                <label for="british">British</label>
+                <input type="checkbox" id="canadian" name="canadian">
+                <label for="canadian">Canadian</label>
+                <input type="checkbox" id="chinese" name="chinese">
+                <label for="chinese">Chinese</label>
+                <input type="checkbox" id="dutch" name="dutch">
+                <label for="dutch">Dutch</label>
+                <input type="checkbox" id="french" name="french">
+                <label for="french">French</label>
+                <input type="checkbox" id="greek" name="greek">
+                <label for="greek">Greek</label>
+                <input type="checkbox" id="indian" name="indian">
+                <label for="indian">Indian</label>
+                <input type="checkbox" id="irish" name="irish">
+                <label for="irish">Irish</label>
+            </div>
+            <div class="checklistCol2">
+              <input type="checkbox" id="italian" name="italian">
+              <label for="italian">Italian</label>
+              <input type="checkbox" id="jamaican" name="jamaican">
+              <label for="jamaican">Jamaican</label>
+              <input type="checkbox" id="japanese" name="japanese">
+              <label for="japanese">Japanese</label>
+              <input type="checkbox" id="malaysian" name="malaysian">
+              <label for="malaysian">Malaysian</label>
+              <input type="checkbox" id="mexican" name="mexican">
+              <label for="mexican">Mexican</label>
+              <input type="checkbox" id="moroccan" name="moroccan">
+              <label for="moroccan">Moroccan</label>
+              <input type="checkbox" id="russian" name="russian">
+              <label for="russian">Russian</label>
+              <input type="checkbox" id="spanish" name="spanish">
+              <label for="spanish">Spanish</label>
+              <input type="checkbox" id="thai" name="thai">
+              <label for="thai">Thai</label>
+              <input type="checkbox" id="vietnamese" name="vietnamese">
+              <label for="vietnamese">Vietnamese</label>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="foodPrefSubmit js-foodPrefSubmit">Submit</button>
+        </div>
+        
+      </form>
+    </section>
+
+    <section role="region" class="mealCalendarScreen js-mealCalendarScreen hidden">
+        <div class="month">
+          <ul>
+            <li class="prev"></li>
+            <li class="next"></li>
+            <li>
+              December<br>
+              <span style="font-size:18px">2018</span>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="weekdays">
+          <li>Mo</li>
+          <li>Tu</li>
+          <li>We</li>
+          <li>Th</li>
+          <li>Fr</li>
+          <li>Sa</li>
+          <li>Su</li>
+        </ul>
+
+        <ul class="days">
+          <li>1 <br><br><a href=""></a></li>
+          <li>2 <br><br><a href=""></a></li>
+          <li>3 <br><br><a href=""></a></li>
+          <li>4 <br><br><a href=""></a></li>
+          <li>5 <br><br><a href=""></a></li>
+          <li>6 <br><br><a href=""></a></li>
+          <li>7 <br><br><a href=""></a></li>
+          <li>8 <br><br><a href=""></a></li>
+          <li>9 <br><br><a href=""></a></li>
+          <li><span class="active">10</span> <br><br><a href=""></a></li>
+          <li>11 <br><br><a href=""></a></li>
+          <li>12 <br><br><a href=""></a></li>
+          <li>13 <br><br><a href=""></a></li>
+          <li>14 <br><br><a href=""></a></li>
+          <li>15 <br><br><a href=""></a></li>
+          <li>16 <br><br><a href=""></a></li>
+          <li>17 <br><br><a href=""></a></li>
+          <li>18 <br><br><a href=""></a></li>
+          <li>19 <br><br><a href=""></a></li>
+          <li>20 <br><br><a href=""></a></li>
+          <li>21 <br><br><a href=""></a></li>
+          <li>22 <br><br><a href=""></a></li>
+          <li>23 <br><br><a href=""></a></li>
+          <li>24 <br><br><a href=""></a></li>
+          <li>25 <br><br><a href=""></a></li>
+          <li>26 <br><br><a href=""></a></li>
+          <li>27 <br><br><a href=""></a></li>
+          <li>28 <br><br><a href=""></a></li>
+          <li>29 <br><br><a href=""></a></li>
+          <li>30 <br><br><a href=""></a></li>
+          <li>31 <br><br><a href=""></a></li>
+        </ul>
+
+    </section>
+    <section role="region" class="recipeDetailsScreen hidden">
+      <div class="ingredientsBlock">
+        <h3>Ingredients</h3>
+        <ul class="ingredientsList">
+        </ul>
+      </div>
+      <div class="instructionsBlock">
+        <h3>Instructions</h3>
+        <ol class="instructionsList">
+        </ol>
+      </div>
+    </section>
+    <script
+			  src="https://code.jquery.com/jquery-3.3.1.js"
+			  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			  crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
